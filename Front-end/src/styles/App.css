@@ -1,0 +1,238 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 90%;
+    border-radius: 8px;
+    background-color: #272424;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.header-text {
+    font-size: 24px;
+}
+
+.main-template {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #2b2b2b; 
+    color: white; 
+}
+
+.userCard {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    width: 240px;
+    height: 46px;
+    border-radius: 8px;
+    background-color: #38393A;
+    border: 1px solid #2B2E75;  
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.userName{
+    display: flex;
+    align-items: center;
+    margin-left: 3.5rem;
+    font-size: 17px;
+}
+   
+.sidebar {
+    height: 100vh;
+    width: 16%;
+    background-color: #1f1f1f; 
+    border-right: 2px solid #000000; 
+    padding: 6.7rem 12px 0 12px; 
+}
+
+.conversations {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    gap: 8px;
+}
+
+.conversation-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+  
+.conversation-button:hover {
+    background-color: #444;
+}
+  
+.conversation-button.selected {
+    background-color: #666;
+    font-weight: bold;
+}
+
+.body-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 84%;
+}
+
+.modules {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7.2rem;
+    gap: 16px;
+    
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.chat p {
+    font-size: 28px;
+}
+
+.suggestions {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    max-width: 70%;
+    gap: 10px;
+    margin-top: 20px; 
+    padding: 4px; 
+}
+
+.button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.input {
+    width: 80%;
+    height: 1rem;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}    
+
+.modulesButton {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 10px;
+}
+
+.button-wrapper {
+    display: inline-block;
+    cursor: pointer;
+    width: 92px; 
+    text-align: center;
+}
+  
+.button-wrapper.selected button {
+    background-color: #666;
+    font-weight: bold;
+}
+
+.input-with-button {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    overflow: hidden;
+  }
+  
+.input-with-button .input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+}
+  
+.input-with-button .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3d3d;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+.input-with-button .button:hover {
+    background-color: #555;
+}
+  
+.input-with-button .icon {
+    color: #fff;
+    font-size: 16px;
+}   
+
+.messages {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+  
+.messages p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+  
